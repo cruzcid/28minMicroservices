@@ -50,17 +50,18 @@
 		</dependency>
 
 		<!-- // http://localhost:8080/swagger-ui/index.html This url is valid to access swagger documentation. --> 
+		<!--
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.3.0</version>
-		</dependency>
+		</dependency> -->
 		
 		<!-- Automatically transform JSON to XML when Header Accept: application/xml -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 
 	<build>
