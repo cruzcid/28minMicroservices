@@ -28,6 +28,7 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 		return new ResponseEntity<ErrorDetails>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
+	// method name independent of calling. Triggered by type of class defined in the exception handler. 
 	@ExceptionHandler(UserNotFoundException.class)
 	public final ResponseEntity<ErrorDetails> handleUserNotFoundException(Exception ex, WebRequest request) {
 		ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(),
